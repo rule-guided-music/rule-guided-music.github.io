@@ -155,3 +155,98 @@ body {
 #interpolation-image-wrapper img {
   border-radius: 5px;
 }
+
+
+.center-stuff {
+  /* display: flex; */
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  /* flex-wrap: wrap; */
+  padding-bottom: 20px;
+}
+
+.vis midi-player {
+  display: block;
+  width: inherit;
+  margin: 4px;
+  margin-bottom: 0;
+}
+
+.vis midi-player::part(control-panel) {
+  /* background: #252a34; */
+  border: 2px solid #000;
+  border-radius: 10px 10px 0 0;
+}
+
+.vis midi-player::part(play-button) {
+  color: #222;
+  border: 2px solid currentColor;
+  background-color: #ddd;
+  border-radius: 20px;
+  transition: all 0.2s;
+  content: 'hello';
+}
+
+.vis midi-player::part(play-button):hover {
+  color: #000;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+midi-player::part(time) {
+  font-family: monospace;
+}
+
+/* Custom visualizer style */
+.vis midi-visualizer .piano-roll-visualizer {
+  /* background: #252a34; */
+  border: 2px solid black;
+  border-top: none;
+  border-radius: 0 0 10px 10px;
+  margin: 4px;
+  margin-top: 0;
+  overflow: auto;
+}
+
+.alone midi-visualizer .piano-roll-visualizer {
+/* background: #252a34; */
+border: 2px solid black;
+border-radius: 10px 10px 10px 10px;
+margin: 5px;
+overflow: auto;
+}
+
+midi-visualizer svg rect.note {
+  opacity: 0.6;
+  stroke-width: 2;
+}
+
+midi-visualizer svg rect.note[data-instrument="0"] {
+  fill: #1c71d8;
+  /* stroke: #500; */
+}
+
+.inp midi-visualizer svg rect.note[data-instrument="0"] {
+  fill: #444;
+  /* stroke: #500; */
+}
+
+.inp midi-visualizer svg rect.note[data-instrument="1"] {
+  fill: #1c71d8;
+  /* stroke: #055; */
+}
+
+midi-visualizer svg rect.note[data-is-drum="true"] {
+  fill: #888;
+  /* stroke: #888; */
+}
+
+midi-visualizer svg rect.note.active {
+  opacity: 0.9;
+  stroke: #000;
+}
+
+midi-visualizer .piano-roll-visualizer svg {
+background: linear-gradient(90deg, #aaa 1px, transparent 1px 15px, rgba(170, 170, 170, 0.3333333333) 16px, transparent 16px 30px, rgba(170, 170, 170, 0.3333333333) 31px, transparent 31px 45px, rgba(170, 170, 170, 0.3333333333) 46px, transparent 46px) left/60px repeat;
+}

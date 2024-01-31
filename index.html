@@ -314,21 +314,23 @@
       <!-- Visual Effects. -->
       <div class="column">
         <div class="content">
-          <h2 class="title is-3">Visual Effects</h2>
+          <h2 class="title is-3">Generation on Muscore Data</h2>
           <p>
-            Using <i>nerfies</i> you can create fun visual effects. This Dolly zoom effect
-            would be impossible without nerfies since it would require going through a wall.
+            The generation is conditioned on Muscore Data.
           </p>
-          <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/dollyzoom-stacked.mp4"
-                    type="video/mp4">
-          </video>
+          <section class="vis inp">
+            <midi-player src="./midi/b_49_s13_y_1.midi" sound-font visualizer="#Vis_inp_below_mld_1"> </midi-player>
+            <midi-visualizer src="./midi/b_49_s13_y_1.midi" type="piano-roll" id="Vis_inp_below_mld_1">
+            </midi-visualizer>
+        </section>
         </div>
       </div>
       <!--/ Visual Effects. -->
 
+
+
       <!-- Matting. -->
-      <div class="column">
+      <!-- <div class="column">
         <h2 class="title is-3">Matting</h2>
         <div class="columns is-centered">
           <div class="column content">
@@ -343,7 +345,9 @@
           </div>
 
         </div>
-      </div>
+      </div> -->
+
+      
     </div>
     <!--/ Matting. -->
 
@@ -443,7 +447,7 @@
 </section>
 
 
-<section class="section" id="BibTeX">
+<!-- <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
     <pre><code>@article{park2021nerfies,
@@ -453,7 +457,7 @@
   year      = {2021},
 }</code></pre>
   </div>
-</section>
+</section> -->
 
 
 <footer class="footer">
