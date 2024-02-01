@@ -447,12 +447,61 @@
           Chord Progression:
         </p>
         <section class="vis inp">
+          <midi-player id="myMidiPlayer" src="./static/media/sample_49_y_1_comp.midi" sound-font visualizer="#Comp4"> </midi-player>
+           <!-- MP3 Player -->
+           
+           <audio id="myAudio" controls>
+            <source src="./static/media/sample_49_y_1_comp.mp3" type="audio/mp3">
+          </audio>
+
+          <button onclick="playBoth()">Play Both</button>
+
+          <midi-visualizer src="./static/media/sample_49_y_1_comp.midi" type="piano-roll" id="Comp4">
+          </midi-visualizer>
+      </section>
+      </div>
+    </div>
+
+    </div>
+
+    <!-- Unconditional Generation -->
+    <div class="container is-max-desktop is-centered">
+
+      <h2 class="title is-3">Unconditional Generation</h2>
+    <div class="columns is-full-width">
+      
+    <!-- Sample 1-->
+    <div class="column">
+      <div class="content">
+        <h2 class="title is-4">Rules</h2>
+        <section class="vis inp">
+          <midi-player src="./static/media/sample_21_y_2_comp.midi" sound-font visualizer="#Comp3"> </midi-player>
+          <midi-visualizer src="./static/media/sample_21_y_2_comp.midi" type="piano-roll" id="Comp3">
+          </midi-visualizer>
+      </section>
+      </div>
+    </div>
+    <!--/ Sample 1 -->
+
+    <!-- sample 2. -->
+
+    <div class="column">
+      <div class="content">
+        <h2 class="title is-4">Rules</h2>
+        <section class="vis inp">
           <midi-player src="./static/media/sample_49_y_1_comp.midi" sound-font visualizer="#Comp4"> </midi-player>
           <midi-visualizer src="./static/media/sample_49_y_1_comp.midi" type="piano-roll" id="Comp4">
           </midi-visualizer>
       </section>
       </div>
     </div>
+
+    </div>
+  </div>
+
+    <!-- Unconditional Generation End -->
+
+    
 
   
     <!--/ Matting. -->
@@ -550,6 +599,8 @@
     <!--/ Concurrent Work. -->
 
   </div>
+
+  
 </section>
 
 
@@ -598,6 +649,36 @@
 </footer>
 
 <script src="https://cdn.jsdelivr.net/combine/npm/tone@14.7.58,npm/@magenta/music@1.23.1/es6/core.js,npm/focus-visible@5,npm/html-midi-player@1.4.0"></script>
+<script>
+  function playBoth() {
+      var midiPlayer = document.getElementById('Comp3');
+      //var audioPlayer = document.getElementById('audioPlayer');
+      var audioPlayer = document.getElementById('myAudio');
+      //var midiPlayer = document.querySelector('#midi-player');
+
+      // Play MIDI silently
+      //midiPlayer.volume = 0;
+      midiPlayer.play();
+
+      // Play audio file
+      audioPlayer.play();
+  }
+
+  // // Synchronize audio with MIDI playback
+  // midiPlayer.addEventListener('play', function() {
+  //     audioPlayer.currentTime = midiPlayer.currentTime;
+  //     audioPlayer.play();
+  // });
+
+  // midiPlayer.addEventListener('pause', function() {
+  //     audioPlayer.pause();
+  // });
+
+  // midiPlayer.addEventListener('stop', function() {
+  //     audioPlayer.pause();
+  //     audioPlayer.currentTime = 0;
+  // });
+</script>
 
 </body>
 </html>
