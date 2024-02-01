@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="Deformable Neural Radiance Fields creates free-viewpoint portraits (nerfies) from casually captured videos.">
-  <meta name="keywords" content="Nerfies, D-NeRF, NeRF">
+        content="Symbolic Music Generation with Non-Differentiable Rule Guided Diffusion.">
+  <meta name="keywords" content=" symbolic music generation, non-differentiable rule, diffusion models">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Nerfies: Deformable Neural Radiance Fields</title>
+  <title>Symbolic Music Generation with Non-Differentiable Rule Guided Diffusion</title>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script> -->
@@ -32,7 +32,7 @@
   <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
-  <link rel="icon" href="./static/images/favicon.svg">
+  <link rel="icon" href="./static/images/favicon-32x32.png">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="./static/js/fontawesome.all.min.js"></script>
@@ -177,7 +177,7 @@
   </div>
 </section>
 
-<section class="hero teaser">
+<!-- <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
       <video id="teaser" autoplay muted loop playsinline height="100%">
@@ -191,10 +191,10 @@
       </h2>
     </div>
   </div>
-</section>
+</section> -->
 
 
-<section class="hero is-light is-small">
+<!-- <section class="hero is-light is-small">
   <div class="hero-body">
     <div class="container">
       <div id="results-carousel" class="carousel results-carousel">
@@ -249,13 +249,13 @@
       </div>
     </div>
   </div>
-</section>
+</section> -->
 
 
 <section class="section">
   <div class="container is-max-desktop">
     <!-- Abstract. -->
-    <div class="columns is-centered has-text-centered">
+    <!-- <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
@@ -288,62 +288,101 @@
           </p>
         </div>
       </div>
-    </div>
+    </div> -->
     <!--/ Abstract. -->
 
     <!-- Paper video. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Video</h2>
+        <h2 class="title is-3">Breeze (Musician Improvises along the Sample) </h2>
         <div class="publication-video">
-          <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0"
+          <iframe src="https://www.youtube.com/embed/gioIf0WauW0?rel=0&amp;showinfo=0"
                   frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         </div>
       </div>
     </div>
+
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Agitato ma non Troppo </h2>
+        <div class="publication-video">
+          <iframe src="https://www.youtube.com/embed/6bTiBFM31Rg?rel=0&amp;showinfo=0"
+                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Entrance of an Ancient Castle </h2>
+        <div class="publication-video">
+          <iframe src="https://www.youtube.com/embed/pu8PL1s64N0?rel=0&amp;showinfo=0"
+                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+
+
     <!--/ Paper video. -->
   </div>
 </section>
 
 
 <section class="section">
-  <div class="container is-max-desktop">
+  <div class="container is-max-desktop is-centered">
+    <h2 class="title is-3">Composite Rule Guidance</h2>
 
-    <div class="columns is-centered">
+    <!-- <div class="columns is-centered"> -->
+      <div class="columns is-full-width">
+        
 
       <!-- Visual Effects. -->
       <div class="column">
         <div class="content">
-          <h2 class="title is-3">Generation on Muscore Data</h2>
+          <h2 class="title is-4">Rules</h2>
           <p>
-            The generation is conditioned on Muscore Data.
+            Pitch Histogram:
+          </p>
+          <p>
+            Vertical Note Density:
+            Horizontal Note Density:
+          </p>
+          <p>
+            Chord Progression:
           </p>
           <section class="vis inp">
-            <midi-player src="./static/midi/b_49_s13_y_1.midi" sound-font visualizer="#Vis_inp_below_mld_1"> </midi-player>
-            <midi-visualizer src="./static/midi/b_49_s13_y_1.midi" type="piano-roll" id="Vis_inp_below_mld_1">
+            <midi-player src="./static/media/b_49_s13_y_1_comp.midi" sound-font visualizer="#Comp1"> </midi-player>
+            <midi-visualizer src="./static/media/b_49_s13_y_1_comp.midi" type="piano-roll" id="Comp1">
             </midi-visualizer>
         </section>
         </div>
       </div>
       <!--/ Visual Effects. -->
 
-
-
       <!-- Matting. -->
 
       <div class="column">
         <div class="content">
-          <h2 class="title is-3">Generation on Muscore Data</h2>
+          <h2 class="title is-3">Rules</h2>
           <p>
-            The generation is conditioned on Muscore Data.
+            Pitch Histogram:
+          </p>
+          <p>
+            Vertical Note Density:
+            Horizontal Note Density:
+          </p>
+          <p>
+            Chord Progression:
           </p>
           <section class="vis inp">
-            <midi-player src="./static/midi/b_49_s13_y_1.midi" sound-font visualizer="#Vis_inp_below_mld_1"> </midi-player>
-            <midi-visualizer src="./static/midi/b_49_s13_y_1.midi" type="piano-roll" id="Vis_inp_below_mld_1">
+            <midi-player src="./static/media/b_22_y_0_comp.midi" sound-font visualizer="#Comp2"> </midi-player>
+            <midi-visualizer src="./static/media/b_22_y_0_comp.midi" type="piano-roll" id="Comp2">
             </midi-visualizer>
         </section>
         </div>
       </div>
+
+
       
       <!-- <div class="column">
         <h2 class="title is-3">Matting</h2>
@@ -364,15 +403,116 @@
 
       
     </div>
+
+
+    <div class="columns is-full-width">
+      <!-- <h2 class="title is-3">Composite Rule Guidance</h2> -->
+
+    <!-- Visual Effects. -->
+    <div class="column">
+      <div class="content">
+        <h2 class="title is-4">Rules</h2>
+        <p>
+          Pitch Histogram:
+        </p>
+        <p>
+          Vertical Note Density:
+          Horizontal Note Density:
+        </p>
+        <p>
+          Chord Progression:
+        </p>
+        <section class="vis inp">
+          <midi-player src="./static/media/sample_21_y_2_comp.midi" sound-font visualizer="#Comp3"> </midi-player>
+          <midi-visualizer src="./static/media/sample_21_y_2_comp.midi" type="piano-roll" id="Comp3">
+          </midi-visualizer>
+      </section>
+      </div>
+    </div>
+    <!--/ Visual Effects. -->
+
+    <!-- Matting. -->
+
+    <div class="column">
+      <div class="content">
+        <h2 class="title is-4">Rules</h2>
+        <p>
+          Pitch Histogram:
+        </p>
+        <p>
+          Vertical Note Density:
+          Horizontal Note Density:
+        </p>
+        <p>
+          Chord Progression:
+        </p>
+        <section class="vis inp">
+          <midi-player src="./static/media/sample_49_y_1_comp.midi" sound-font visualizer="#Comp4"> </midi-player>
+          <midi-visualizer src="./static/media/sample_49_y_1_comp.midi" type="piano-roll" id="Comp4">
+          </midi-visualizer>
+      </section>
+      </div>
+    </div>
+
+    <div class="columns is-full-width">
+      <h2 class="title is-3">Unconditional Generation</h2>
+
+    <!-- Visual Effects. -->
+    <div class="column">
+      <div class="content">
+        <h2 class="title is-4">Rules</h2>
+        <p>
+          Pitch Histogram:
+        </p>
+        <p>
+          Vertical Note Density:
+          Horizontal Note Density:
+        </p>
+        <p>
+          Chord Progression:
+        </p>
+        <section class="vis inp">
+          <midi-player src="./static/media/sample_21_y_2_comp.midi" sound-font visualizer="#Comp3"> </midi-player>
+          <midi-visualizer src="./static/media/sample_21_y_2_comp.midi" type="piano-roll" id="Comp3">
+          </midi-visualizer>
+      </section>
+      </div>
+    </div>
+    <!--/ Visual Effects. -->
+
+    <!-- Matting. -->
+
+    <div class="column">
+      <div class="content">
+        <h2 class="title is-4">Rules</h2>
+        <p>
+          Pitch Histogram:
+        </p>
+        <p>
+          Vertical Note Density:
+          Horizontal Note Density:
+        </p>
+        <p>
+          Chord Progression:
+        </p>
+        <section class="vis inp">
+          <midi-player src="./static/media/sample_49_y_1_comp.midi" sound-font visualizer="#Comp4"> </midi-player>
+          <midi-visualizer src="./static/media/sample_49_y_1_comp.midi" type="piano-roll" id="Comp4">
+          </midi-visualizer>
+      </section>
+      </div>
+    </div>
+    
+  </div>
     <!--/ Matting. -->
 
     <!-- Animation. -->
-    <div class="columns is-centered">
+    <!-- <div class="columns is-centered">
       <div class="column is-full-width">
-        <h2 class="title is-3">Animation</h2>
+        <h2 class="title is-3">Animation</h2> -->
 
         <!-- Interpolating. -->
-        <h3 class="title is-4">Interpolating states</h3>
+        <!-- <h3 class="title is-4">Interpolating states</h3>
         <div class="content has-text-justified">
           <p>
             We can also animate the scene by interpolating the deformation latent codes of two input
@@ -402,11 +542,11 @@
             <p class="is-bold">End Frame</p>
           </div>
         </div>
-        <br/>
+        <br/> -->
         <!--/ Interpolating. -->
 
         <!-- Re-rendering. -->
-        <h3 class="title is-4">Re-rendering the input video</h3>
+        <!-- <h3 class="title is-4">Re-rendering the input video</h3>
         <div class="content has-text-justified">
           <p>
             Using <span class="dnerf">Nerfies</span>, you can re-render a video from a novel
@@ -423,16 +563,16 @@
             <source src="./static/videos/replay.mp4"
                     type="video/mp4">
           </video>
-        </div>
+        </div> -->
         <!--/ Re-rendering. -->
 
-      </div>
-    </div>
+      <!-- </div> -->
+    <!-- </div> -->
     <!--/ Animation. -->
 
 
     <!-- Concurrent Work. -->
-    <div class="columns is-centered">
+    <!-- <div class="columns is-centered">
       <div class="column is-full-width">
         <h2 class="title is-3">Related Links</h2>
 
@@ -455,7 +595,7 @@
           </p>
         </div>
       </div>
-    </div>
+    </div> -->
     <!--/ Concurrent Work. -->
 
   </div>
