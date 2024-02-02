@@ -339,7 +339,7 @@
       <!-- Visual Effects. -->
       <div class="column">
         <div class="content">
-          <h2 class="title is-4">Rules</h2>
+          <!-- <h2 class="title is-4">Rules</h2>
           <p>
             Pitch Histogram:
           </p>
@@ -349,7 +349,7 @@
           </p>
           <p>
             Chord Progression:
-          </p>
+          </p> -->
           <section class="vis inp">
             <midi-player src="./static/media/b_49_s13_y_1_comp.midi" sound-font visualizer="#Comp1"> </midi-player>
             <midi-visualizer src="./static/media/b_49_s13_y_1_comp.midi" type="piano-roll" id="Comp1">
@@ -363,7 +363,7 @@
 
       <div class="column">
         <div class="content">
-          <h2 class="title is-3">Rules</h2>
+          <!-- <h2 class="title is-3">Rules</h2>
           <p>
             Pitch Histogram:
           </p>
@@ -373,7 +373,7 @@
           </p>
           <p>
             Chord Progression:
-          </p>
+          </p> -->
           <section class="vis inp">
             <midi-player src="./static/media/b_22_y_0_comp.midi" sound-font visualizer="#Comp2"> </midi-player>
             <midi-visualizer src="./static/media/b_22_y_0_comp.midi" type="piano-roll" id="Comp2">
@@ -411,7 +411,7 @@
     <!-- Visual Effects. -->
     <div class="column">
       <div class="content">
-        <h2 class="title is-4">Rules</h2>
+        <!-- <h2 class="title is-4">Rules</h2>
         <p>
           Pitch Histogram:
         </p>
@@ -421,7 +421,7 @@
         </p>
         <p>
           Chord Progression:
-        </p>
+        </p> -->
         <section class="vis inp">
           <midi-player src="./static/media/sample_21_y_2_comp.midi" sound-font visualizer="#Comp3"> </midi-player>
           <midi-visualizer src="./static/media/sample_21_y_2_comp.midi" type="piano-roll" id="Comp3">
@@ -435,7 +435,7 @@
 
     <div class="column">
       <div class="content">
-        <h2 class="title is-4">Rules</h2>
+        <!-- <h2 class="title is-4">Rules</h2>
         <p>
           Pitch Histogram:
         </p>
@@ -445,7 +445,7 @@
         </p>
         <p>
           Chord Progression:
-        </p>
+        </p> -->
         <section class="vis inp">
           <midi-player id="myMidiPlayer" src="./static/media/sample_49_y_1_comp.midi" sound-font visualizer="#Comp4"> </midi-player>
            <!-- MP3 Player -->
@@ -464,7 +464,10 @@
 
     </div>
 
-    <!-- Unconditional Generation -->
+  </section>
+
+  <section class="section">
+   <!-- Unconditional Generation -->
     <div class="container is-max-desktop is-centered">
 
       <h2 class="title is-3">Unconditional Generation</h2>
@@ -478,7 +481,7 @@
           <midi-visualizer src="./static/media/sample_21_y_2_comp.midi" type="piano-roll" id="Comp3">
           </midi-visualizer>
       </section> -->
-      <audio id="myAudio" controls>
+      <audio controls>
         <source src="./static/media/sample_40_y_0_uncond.mp3" type="audio/mp3">
       </audio>
       </div>
@@ -494,8 +497,22 @@
           <midi-visualizer src="./static/media/sample_49_y_1_comp.midi" type="piano-roll" id="Comp4">
           </midi-visualizer>
       </section> -->
-      <audio id="myAudio" controls>
+      <audio controls>
         <source src="./static/media/sample_5_y_2_uncond.mp3" type="audio/mp3">
+      </audio>
+
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="content">
+        <!-- <section class="vis inp">
+          <midi-player src="./static/media/sample_49_y_1_comp.midi" sound-font visualizer="#Comp4"> </midi-player>
+          <midi-visualizer src="./static/media/sample_49_y_1_comp.midi" type="piano-roll" id="Comp4">
+          </midi-visualizer>
+      </section> -->
+      <audio controls>
+        <source src="./static/media/sample_371_y_0_uncond.mp3" type="audio/mp3">
       </audio>
 
       </div>
@@ -503,8 +520,72 @@
 
     </div>
   </div>
+  </section>
 
-    <!-- Unconditional Generation End -->
+
+
+<section class="section">
+   <!-- Single Rule Guidance -->
+   <div class="container is-max-desktop is-centered">
+
+    <h2 class="title is-3">Single Rule Guidance</h2>
+  <div class="columns is-full-width">
+    
+  <!-- Sample 1-->
+  <div class="column">
+    <div class="content">
+      <!-- <section class="vis inp">
+        <midi-player src="./static/media/sample_21_y_2_comp.midi" sound-font visualizer="#Comp3"> </midi-player>
+        <midi-visualizer src="./static/media/sample_21_y_2_comp.midi" type="piano-roll" id="Comp3">
+        </midi-visualizer>
+    </section> -->
+    <h2 class="title is-4">Pitch Histogram</h2>
+
+    <audio controls>
+      <source src="./static/media/ph_177_y_1.mp3" type="audio/mp3">
+    </audio>
+    </div>
+  </div>
+  <!--/ Sample 1 -->
+
+  <!-- sample 2. -->
+
+  <div class="column">
+    <div class="content">
+      <!-- <section class="vis inp">
+        <midi-player src="./static/media/sample_49_y_1_comp.midi" sound-font visualizer="#Comp4"> </midi-player>
+        <midi-visualizer src="./static/media/sample_49_y_1_comp.midi" type="piano-roll" id="Comp4">
+        </midi-visualizer>
+    </section> -->
+    <h2 class="title is-4">Note Density</h2>
+    <audio controls>
+      <source src="./static/media/nd_19_y_1.mp3" type="audio/mp3">
+    </audio>
+
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="content">
+      <!-- <section class="vis inp">
+        <midi-player src="./static/media/sample_49_y_1_comp.midi" sound-font visualizer="#Comp4"> </midi-player>
+        <midi-visualizer src="./static/media/sample_49_y_1_comp.midi" type="piano-roll" id="Comp4">
+        </midi-visualizer>
+    </section> -->
+    <h2 class="title is-4">Chord Progression</h2>
+    <audio controls>
+      <source src="./static/media/chord_124_y_1.mp3" type="audio/mp3">
+    </audio>
+
+    </div>
+  </div>
+
+  </div>
+</div>
+
+</section>
+
+    <!-- Single Rule Guidance End -->
 
     
 
