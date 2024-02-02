@@ -255,46 +255,34 @@
 <section class="section">
   <div class="container is-max-desktop">
     <!-- Abstract. -->
-    <!-- <div class="columns is-centered has-text-centered">
+    <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
+        <h2 class="title is-3">Examples of Our System as a Compositional Tool</h2>
         <div class="content has-text-justified">
           <p>
-            We present the first method capable of photorealistically reconstructing a non-rigidly
-            deforming scene using photos/videos captured casually from mobile phones.
-          </p>
-          <p>
-            Our approach augments neural radiance fields
-            (NeRF) by optimizing an
-            additional continuous volumetric deformation field that warps each observed point into a
-            canonical 5D NeRF.
-            We observe that these NeRF-like deformation fields are prone to local minima, and
-            propose a coarse-to-fine optimization method for coordinate-based models that allows for
-            more robust optimization.
-            By adapting principles from geometry processing and physical simulation to NeRF-like
-            models, we propose an elastic regularization of the deformation field that further
-            improves robustness.
-          </p>
-          <p>
-            We show that <span class="dnerf">Nerfies</span> can turn casually captured selfie
-            photos/videos into deformable NeRF
-            models that allow for photorealistic renderings of the subject from arbitrary
-            viewpoints, which we dub <i>"nerfies"</i>. We evaluate our method by collecting data
-            using a
-            rig with two mobile phones that take time-synchronized photos, yielding train/validation
-            images of the same pose at different viewpoints. We show that our method faithfully
-            reconstructs non-rigidly deforming scenes and reproduces unseen views with high
-            fidelity.
+            To demonstrate how our system can be used effectively as a compositional tool, we provide three example videos.
+            A musician specifies musical characteristics characteristics in terms of the rules (e.g. fairly
+            sparse excerpt, following a simple I-V chord progression in C major, etc), and the system generates 3-5 samples per request. 
+            The musician selects a favorite sample, loops it as accompaniment on a Disklavier piano, and improvises over it. 
+            The following three videos feature the musician's performance with the system-generated music.
           </p>
         </div>
       </div>
-    </div> -->
+    </div>
     <!--/ Abstract. -->
 
     <!-- Paper video. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Demo 1: I-V, Sparse (C Major) </h2>
+        <div class="content has-text-justified">
+          <p>
+            In <b> Demo 1</b>, the model generated material that suggested a melody. 
+            Since the musician wanted to play the second track in the upper register, they first allowed the excerpt 
+            to play in full, as generated, and then removed the upper notes from the accompaniment to give room for themselves to play overtop. 
+            They chose to use the model’s generated melody as a motif, and further improvise based on it.
+          </p>
+        </div>
         <div class="publication-video">
           <iframe src="https://www.youtube.com/embed/-Vm2sNCkzSo?rel=0&amp;showinfo=0"
                   frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
@@ -305,6 +293,12 @@
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Demo 2: Triplet Ostinato (C minor) </h2>
+        <div class="content has-text-justified">
+          <p>
+            In <b> Demo 2</b>, the model generates an excerpt with a steady accompanying triplet ostinato behind a 
+            slower-moving descending melody in C minor (that suggests a progression that moves between the I and the V).
+          </p>
+        </div>
         <div class="publication-video">
           <iframe src="https://www.youtube.com/embed/wxgH1LXXh1E?rel=0&amp;showinfo=0"
                   frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
@@ -315,6 +309,11 @@
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Demo 3: Alternating Textures, Bb7 / Eb / Eb- </h2>
+        <div class="content has-text-justified">
+          <p>
+            In <b> Demo 3</b>, the model generates a sample with a changing note density and texture, and a slightly ambiguous harmonic quality that allowed flexibility in the improvising over it.
+          </p>
+        </div>
         <div class="publication-video">
           <iframe src="https://www.youtube.com/embed/hB14zjvV-zM?rel=0&amp;showinfo=0"
                   frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
