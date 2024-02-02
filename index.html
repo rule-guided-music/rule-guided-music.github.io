@@ -296,7 +296,7 @@
       <div class="column is-four-fifths">
         <h2 class="title is-3">Breeze (Musician Improvises along the Sample) </h2>
         <div class="publication-video">
-          <iframe src="https://www.youtube.com/embed/gioIf0WauW0?rel=0&amp;showinfo=0"
+          <iframe src="https://www.youtube.com/embed/-Vm2sNCkzSo?rel=0&amp;showinfo=0"
                   frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         </div>
       </div>
@@ -306,7 +306,7 @@
       <div class="column is-four-fifths">
         <h2 class="title is-3">Agitato ma non Troppo </h2>
         <div class="publication-video">
-          <iframe src="https://www.youtube.com/embed/6bTiBFM31Rg?rel=0&amp;showinfo=0"
+          <iframe src="https://www.youtube.com/embed/wxgH1LXXh1E?rel=0&amp;showinfo=0"
                   frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         </div>
       </div>
@@ -316,7 +316,7 @@
       <div class="column is-four-fifths">
         <h2 class="title is-3">Entrance of an Ancient Castle </h2>
         <div class="publication-video">
-          <iframe src="https://www.youtube.com/embed/pu8PL1s64N0?rel=0&amp;showinfo=0"
+          <iframe src="https://www.youtube.com/embed/hB14zjvV-zM?rel=0&amp;showinfo=0"
                   frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         </div>
       </div>
@@ -449,12 +449,12 @@
         <section class="vis inp">
           <midi-player id="myMidiPlayer" src="./static/media/sample_49_y_1_comp.midi" sound-font visualizer="#Comp4"> </midi-player>
            <!-- MP3 Player -->
-           
+<!--            
            <audio id="myAudio" controls>
             <source src="./static/media/sample_49_y_1_comp.mp3" type="audio/mp3">
           </audio>
 
-          <button onclick="playBoth()">Play Both</button>
+          <button id="playBoth">Play Both</button> -->
 
           <midi-visualizer src="./static/media/sample_49_y_1_comp.midi" type="piano-roll" id="Comp4">
           </midi-visualizer>
@@ -650,19 +650,14 @@
 
 <script src="https://cdn.jsdelivr.net/combine/npm/tone@14.7.58,npm/@magenta/music@1.23.1/es6/core.js,npm/focus-visible@5,npm/html-midi-player@1.4.0"></script>
 <script>
-  function playBoth() {
-      var midiPlayer = document.getElementById('Comp3');
-      //var audioPlayer = document.getElementById('audioPlayer');
-      var audioPlayer = document.getElementById('myAudio');
-      //var midiPlayer = document.querySelector('#midi-player');
+  document.getElementById('playBoth').addEventListener('click', function() {
+    var audioPlayer = document.getElementById('myAudio');
+    var midiPlayer = document.getElementById('myMidiPlayer');
 
-      // Play MIDI silently
-      //midiPlayer.volume = 0;
-      midiPlayer.play();
-
-      // Play audio file
-      audioPlayer.play();
-  }
+    // Assuming midi-player supports .play() method
+    midiPlayer.start();
+    audioPlayer.play();
+});
 
   // // Synchronize audio with MIDI playback
   // midiPlayer.addEventListener('play', function() {
