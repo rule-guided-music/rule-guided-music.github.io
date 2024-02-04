@@ -39,6 +39,23 @@
   <script src="./static/js/bulma-carousel.min.js"></script>
   <script src="./static/js/bulma-slider.min.js"></script>
   <script src="./static/js/index.js"></script>
+
+  <style>
+    table {
+        border-collapse: collapse;
+        width: 60%; /* Reduce table width */
+        margin: auto; /* Center the table */
+    }
+    td, th {
+        border: 0.8px solid black;
+        padding: 4px; /* Reduce padding */
+        text-align: center;
+        font-size: 12px; /* Smaller font size */
+    }
+    th {
+        background-color: #f2f2f2;
+    }
+</style>
 </head>
 <body>
 
@@ -338,8 +355,8 @@
       <!-- Visual Effects. -->
       <div class="column">
         <div class="content">
-          <!-- <h2 class="title is-4">Rules</h2>
-          <p>
+          <h2 class="title is-4">Rules</h2>
+          <!-- <p>
             Pitch Histogram:
           </p>
           <p>
@@ -349,6 +366,55 @@
           <p>
             Chord Progression:
           </p> -->
+          <img src="./static/images/ph-comp1-r.png" alt="Pitch Histogram">
+          <table>
+            <tr>
+                <th>Time Window</th>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <th>Vertical Note Density</th>
+                <td>1.89</td>
+                <td>1.89</td>
+                <td>2.70</td>
+                <td>2.13</td>
+                <td>1.74</td>
+                <td>1.84</td>
+                <td>1.77</td>
+                <td>1.90</td>
+            </tr>
+            <tr>
+                <th>Horizontal Note Density</th>
+                <td>8.00</td>
+                <td>7.00</td>
+                <td>5.00</td>
+                <td>10.00</td>
+                <td>14.00</td>
+                <td>14.00</td>
+                <td>15.00</td>
+                <td>14.00</td>
+            </tr>
+            <tr>
+                <th>Chord Progression</th>
+                <td>1</td>
+                <td>4</td>
+                <td>6</td>
+                <td>5</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+            </tr>
+        </table>
+        
+
           <section class="vis inp">
             <midi-player src="./static/media/b_49_s13_y_1_comp.midi" sound-font visualizer="#Comp1"> </midi-player>
             <midi-visualizer src="./static/media/b_49_s13_y_1_comp.midi" type="piano-roll" id="Comp1">
@@ -362,8 +428,8 @@
 
       <div class="column">
         <div class="content">
-          <!-- <h2 class="title is-3">Rules</h2>
-          <p>
+          <h2 class="title is-4">Rules</h2>
+          <!-- <p>
             Pitch Histogram:
           </p>
           <p>
@@ -373,11 +439,63 @@
           <p>
             Chord Progression:
           </p> -->
+          <img src="./static/images/ph-comp2-r.png" alt="Pitch Histogram">
+          <table>
+            <tr>
+                <th>Time Window</th>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <th>Vertical Note Density</th>
+                <td>1.65</td>
+                <td>1.36</td>
+                <td>2.09</td>
+                <td>1.67</td>
+                <td>2.31</td>
+                <td>2.01</td>
+                <td>2.56</td>
+                <td>2.96</td>
+            </tr>
+            <tr>
+                <th>Horizontal Note Density</th>
+                <td>16.00</td>
+                <td>11.00</td>
+                <td>13.00</td>
+                <td>11.00</td>
+                <td>13.00</td>
+                <td>189.00</td>
+                <td>17.00</td>
+                <td>13.00</td>
+            </tr>
+            <tr>
+                <th>Chord Progression</th>
+                <td>4</td>
+                <td>6</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>5</td>
+                <td>4</td>
+            </tr>
+        </table>
+        <!-- <div id="player1" data-audio="mp3-comp2"> -->
           <section class="vis inp">
             <midi-player src="./static/media/b_22_y_0_comp.midi" sound-font visualizer="#Comp2"> </midi-player>
+            <!-- <audio id="mp3-comp2" display="none">
+              <source src="./static/media/b_22_y_0_comp.mp3" type="audio/mp3">
+            </audio> -->
             <midi-visualizer src="./static/media/b_22_y_0_comp.midi" type="piano-roll" id="Comp2">
             </midi-visualizer>
         </section>
+      <!-- </div> -->
         </div>
       </div>
 
@@ -410,8 +528,8 @@
     <!-- Visual Effects. -->
     <div class="column">
       <div class="content">
-        <!-- <h2 class="title is-4">Rules</h2>
-        <p>
+        <h2 class="title is-4">Rules</h2>
+        <!-- <p>
           Pitch Histogram:
         </p>
         <p>
@@ -421,6 +539,53 @@
         <p>
           Chord Progression:
         </p> -->
+        <img src="./static/images/ph-comp3-r.png" alt="Pitch Histogram"">
+        <table>
+          <tr>
+              <th>Time Window</th>
+              <td>1</td>
+              <td>2</td>
+              <td>3</td>
+              <td>4</td>
+              <td>5</td>
+              <td>6</td>
+              <td>7</td>
+              <td>8</td>
+          </tr>
+          <tr>
+              <th>Vertical Note Density</th>
+              <td>3.32</td>
+              <td>3.09</td>
+              <td>3.22</td>
+              <td>2.81</td>
+              <td>2.52</td>
+              <td>2.74</td>
+              <td>3.34</td>
+              <td>2.99</td>
+          </tr>
+          <tr>
+              <th>Horizontal Note Density</th>
+              <td>8.00</td>
+              <td>7.00</td>
+              <td>7.00</td>
+              <td>6.00</td>
+              <td>6.00</td>
+              <td>8.00</td>
+              <td>7.00</td>
+              <td>5.00</td>
+          </tr>
+          <tr>
+              <th>Chord Progression</th>
+              <td>5</td>
+              <td>1</td>
+              <td>4</td>
+              <td>1</td>
+              <td>3</td>
+              <td>6</td>
+              <td>4</td>
+              <td>6</td>
+          </tr>
+      </table>
         <section class="vis inp">
           <midi-player src="./static/media/sample_21_y_2_comp.midi" sound-font visualizer="#Comp3"> </midi-player>
           <midi-visualizer src="./static/media/sample_21_y_2_comp.midi" type="piano-roll" id="Comp3">
@@ -434,8 +599,8 @@
 
     <div class="column">
       <div class="content">
-        <!-- <h2 class="title is-4">Rules</h2>
-        <p>
+        <h2 class="title is-4">Rules</h2>
+        <!-- <p>
           Pitch Histogram:
         </p>
         <p>
@@ -445,19 +610,69 @@
         <p>
           Chord Progression:
         </p> -->
+        <img src="./static/images/ph-comp4-r.png" alt="Pitch Histogram">
+        <table>
+          <tr>
+              <th>Time Window</th>
+              <td>1</td>
+              <td>2</td>
+              <td>3</td>
+              <td>4</td>
+              <td>5</td>
+              <td>6</td>
+              <td>7</td>
+              <td>8</td>
+          </tr>
+          <tr>
+            <th>Vertical Note Density</th>
+            <td>1.89</td>
+            <td>1.89</td>
+            <td>2.70</td>
+            <td>2.13</td>
+            <td>1.74</td>
+            <td>1.84</td>
+            <td>1.77</td>
+            <td>1.90</td>
+        </tr>
+        <tr>
+            <th>Horizontal Note Density</th>
+            <td>8.00</td>
+            <td>7.00</td>
+            <td>5.00</td>
+            <td>10.00</td>
+            <td>14.00</td>
+            <td>14.00</td>
+            <td>15.00</td>
+            <td>14.00</td>
+        </tr>
+        <tr>
+            <th>Chord Progression</th>
+            <td>1</td>
+            <td>1</td>
+            <td>5</td>
+            <td>1</td>
+            <td>2</td>
+            <td>2</td>
+            <td>2</td>
+            <td>2</td>
+        </tr>
+      </table>
+      <!-- <div id="player1" data-audio="mp3-comp4"> -->
         <section class="vis inp">
-          <midi-player id="myMidiPlayer" src="./static/media/sample_49_y_1_comp.midi" sound-font visualizer="#Comp4"> </midi-player>
+          <midi-player id="midi-comp4" src="./static/media/sample_49_y_1_comp.midi" sound-font visualizer="#Comp4"> </midi-player>
            <!-- MP3 Player -->
-<!--            
-           <audio id="myAudio" controls>
+           
+           <!-- <audio id="mp3-comp4" display="none">
             <source src="./static/media/sample_49_y_1_comp.mp3" type="audio/mp3">
-          </audio>
+          </audio> -->
 
-          <button id="playBoth">Play Both</button> -->
+          <!-- <button id="playBoth">Play Both</button> -->
 
           <midi-visualizer src="./static/media/sample_49_y_1_comp.midi" type="piano-roll" id="Comp4">
           </midi-visualizer>
+        
       </section>
+    <!-- </div> -->
       </div>
     </div>
 
@@ -528,10 +743,10 @@
    <div class="container is-max-desktop is-centered">
 
     <h2 class="title is-3">Single Rule Guidance</h2>
-  <div class="columns is-full-width">
+  <!-- <div class="columns is-full-width"> -->
     
   <!-- Sample 1-->
-  <div class="column">
+  <div class="column is-four-fifths">
     <div class="content">
       <!-- <section class="vis inp">
         <midi-player src="./static/media/sample_21_y_2_comp.midi" sound-font visualizer="#Comp3"> </midi-player>
@@ -539,6 +754,7 @@
         </midi-visualizer>
     </section> -->
     <h2 class="title is-4">Pitch Histogram</h2>
+    <img src="./static/images/ph-single.png" alt="Pitch Histogram" width="500px">
 
     <audio controls>
       <source src="./static/media/ph_177_y_1.mp3" type="audio/mp3">
@@ -549,7 +765,7 @@
 
   <!-- sample 2. -->
 
-  <div class="column">
+  <div class="column is-four-fifths">
     <div class="content">
       <!-- <section class="vis inp">
         <midi-player src="./static/media/sample_49_y_1_comp.midi" sound-font visualizer="#Comp4"> </midi-player>
@@ -557,6 +773,41 @@
         </midi-visualizer>
     </section> -->
     <h2 class="title is-4">Note Density</h2>
+    <table>
+      <tr>
+          <th>Time Window</th>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+          <td>4</td>
+          <td>5</td>
+          <td>6</td>
+          <td>7</td>
+          <td>8</td>
+      </tr>
+      <tr>
+        <th>Vertical Note Density</th>
+        <td>3.66</td>
+        <td>3.36</td>
+        <td>3.91</td>
+        <td>2.75</td>
+        <td>3.16</td>
+        <td>3.91</td>
+        <td>3.63</td>
+        <td>3.81</td>
+    </tr>
+    <tr>
+        <th>Horizontal Note Density</th>
+        <td>3.00</td>
+        <td>2.00</td>
+        <td>1.00</td>
+        <td>2.00</td>
+        <td>3.00</td>
+        <td>1.00</td>
+        <td>3.00</td>
+        <td>2.00</td>
+    </tr>
+  </table>
     <audio controls>
       <source src="./static/media/nd_19_y_1.mp3" type="audio/mp3">
     </audio>
@@ -564,7 +815,7 @@
     </div>
   </div>
 
-  <div class="column">
+  <div class="column is-four-fifths">
     <div class="content">
       <!-- <section class="vis inp">
         <midi-player src="./static/media/sample_49_y_1_comp.midi" sound-font visualizer="#Comp4"> </midi-player>
@@ -572,6 +823,30 @@
         </midi-visualizer>
     </section> -->
     <h2 class="title is-4">Chord Progression</h2>
+    <table>
+      <tr>
+          <th>Time Window</th>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+          <td>4</td>
+          <td>5</td>
+          <td>6</td>
+          <td>7</td>
+          <td>8</td>
+      </tr>
+      <tr>
+          <th>Chord Progression</th>
+          <td>2</td>
+          <td>5</td>
+          <td>5</td>
+          <td>1</td>
+          <td>2</td>
+          <td>1</td>
+          <td>3</td>
+          <td>1</td>
+      </tr>
+  </table>
     <audio controls>
       <source src="./static/media/chord_124_y_1.mp3" type="audio/mp3">
     </audio>
@@ -579,7 +854,7 @@
     </div>
   </div>
 
-  </div>
+  <!-- </div> -->
 </div>
 
 </section>
@@ -723,7 +998,9 @@
           </p> -->
           <p>
             Thanks for the amazing website template from <a
-              href="https://nerfies.github.io">Nerfies: Deformable Neural Radiance Fields</a>.
+              href="https://nerfies.github.io">Nerfies: Deformable Neural Radiance Fields</a>. 
+            Thanks `<a href="https://cifkao.github.io/html-midi-player/">`html-midi-player `</a>` for the excellent MIDI visualization, 
+            and thanks `<a href="https://polyffusion.github.io">`Polyffusion `</a>` for the excellent configuration.
             Please remember to remove the analytics code included in the header of the website which
             you do not want on your website.
           </p>
@@ -735,30 +1012,84 @@
 
 <script src="https://cdn.jsdelivr.net/combine/npm/tone@14.7.58,npm/@magenta/music@1.23.1/es6/core.js,npm/focus-visible@5,npm/html-midi-player@1.4.0"></script>
 <script>
-  document.getElementById('playBoth').addEventListener('click', function() {
+  var isPlaying = false; // Flag to track playback state
+
+  document.getElementById('myMidiPlayer').addEventListener('click', function() {
     var audioPlayer = document.getElementById('myAudio');
     var midiPlayer = document.getElementById('myMidiPlayer');
 
     // Assuming midi-player supports .play() method
-    midiPlayer.start();
-    audioPlayer.play();
+    if (!isPlaying){
+      midiPlayer.volume = 0;
+      //midiPlayer.start();
+      audioPlayer.play();
+      isPlaying = true;
+      } else{
+         // If already playing, pause both players
+        audioPlayer.pause();
+        // Adjust this to use the correct method for pausing the MIDI player
+        midiPlayer.stop(); // This is illustrative; replace with actual method to pause
+        audioPlayer.currentTime = midiPlayer.currentTime;
+        isPlaying = false;
+      }
+    
 });
-
-  // // Synchronize audio with MIDI playback
-  // midiPlayer.addEventListener('play', function() {
+  // Synchronize audio with MIDI playback
+  // midiPlayer.addEventListener('start', function() {
+  //     midiPlayer.start();
   //     audioPlayer.currentTime = midiPlayer.currentTime;
   //     audioPlayer.play();
   // });
 
-  // midiPlayer.addEventListener('pause', function() {
+  // midiPlayer.addEventListener('stop', function() {
+  //     midiPlayer.stop();
   //     audioPlayer.pause();
+  //     audioPlayer.currentTime = midiPlayer.currentTime;
   // });
 
   // midiPlayer.addEventListener('stop', function() {
+  //     midiPlayer.stop();
+  //     midiPlayer.load();
   //     audioPlayer.pause();
   //     audioPlayer.currentTime = 0;
   // });
 </script>
+
+<script>
+  // Function to toggle play/pause based on the MIDI player clicked
+  function setupPlayerControls() {
+      document.querySelectorAll('midi-player').forEach(midiPlayer => {
+          midiPlayer.addEventListener('click', function() {
+              const playerContainer = midiPlayer.closest('div[data-audio]');
+              const audioId = playerContainer.getAttribute('data-audio');
+              const audioPlayer = document.getElementById(audioId);
+  
+              // Retrieve or initialize the playing state for this player
+              const isPlaying = midiPlayer.getAttribute('data-playing') === 'true';
+  
+              if (!isPlaying) {
+                  // Start playback
+                  audioPlayer.play();
+                  // Add start MIDI playback here as needed
+                  midiPlayer.setAttribute('data-playing', 'true');
+              } else {
+                  // Pause playback
+                  audioPlayer.pause();
+        
+                  midiPlayer.stop(); 
+                  audioPlayer.currentTime = midiPlayer.currentTime;
+                  // Add pause MIDI playback here as needed
+                  midiPlayer.setAttribute('data-playing', 'false');
+                  // Synchronize audioPlayer's currentTime with MIDI if needed
+              }
+          });
+      });
+  }
+  
+  // Call setupPlayerControls when the document is fully loaded
+  document.addEventListener('DOMContentLoaded', setupPlayerControls);
+  </script>
+
 
 </body>
 </html>
