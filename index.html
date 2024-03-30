@@ -208,8 +208,13 @@
         while Figaro-expert-learned requires source music and cannot generate from scratch.
       </p>
       <p>
-        Below each ground truth sample, we put corresponding model generated samples with respect to the ground truth sample above. 
+        Below each ground truth sample, we put corresponding model generated samples with respect to the ground truth sample for comparison. 
       </p>
+    </div>
+
+    <div class="has-text-centered">
+      <h2 class="title is-4">Ground Truth Sample 1 Baseline Comparison</h2>
+      <p></p>
     </div>
 
    <div class="columns is-full-width">
@@ -225,9 +230,7 @@
    </div>
    <!-- Ground Truth 1 -->
 
-   </div>
 
-   <div class="columns is-full-width">
    <!-- SCG ours. -->
 
    <div class="column">
@@ -253,6 +256,10 @@
     </div>
   </div>
   <!-- Figaro Expert Learned -->
+
+</div>
+
+<div class="columns is-full-width">
 
 
   <!-- Figaro Expert -->
@@ -299,6 +306,11 @@
 
 
 
+   <div class="has-text-centered">
+    <h2 class="title is-4">Ground Truth Sample 2 Baseline Comparison</h2>
+    <p></p>
+  </div>
+
 
    <div class="columns is-full-width">
      
@@ -313,9 +325,7 @@
     </div>
     <!-- Ground Truth 2 -->
  
-    </div>
  
-    <div class="columns is-full-width">
     <!-- SCG ours. -->
  
     <div class="column">
@@ -342,6 +352,9 @@
    </div>
    <!-- Figaro Expert Learned -->
  
+  </div>
+ 
+  <div class="columns is-full-width">
  
    <!-- Figaro Expert -->
  
@@ -384,6 +397,10 @@
  
     </div>
 
+    <div class="has-text-centered">
+      <h2 class="title is-4">Ground Truth Sample 3 Baseline Comparison</h2>
+      <p></p>
+    </div>
 
 
     <div class="columns is-full-width">
@@ -399,9 +416,7 @@
       </div>
       <!-- Ground Truth 3 -->
    
-      </div>
-   
-      <div class="columns is-full-width">
+
       <!-- SCG ours. -->
    
       <div class="column">
@@ -427,7 +442,9 @@
        </div>
      </div>
      <!-- Figaro Expert Learned -->
+    </div>
    
+    <div class="columns is-full-width">
    
      <!-- Figaro Expert -->
    
@@ -589,7 +606,7 @@
    <div class="container is-max-desktop is-centered">
 
      <h2 class="title is-3">VAE reconstruction</h2>
-     <div class="has-text-justified">
+     <div class="content has-text-justified">
       <p>In table 2, we included the samples from the dataset as the oracle case (GT). 
         This should be similar to using the VAE-reconstructed ground truth because the VAE reconstructed music is perceptually the same as the ground truth.
          This is because we only use VAE to encode 1.28s music excerpts instead of long sequences (See Figure 2, page 5 for our model architecture); 
@@ -597,7 +614,7 @@
         </p>
       <p>
         For each row, we put the VAE reconstructed sample with respect to the ground truth sample. 
-        </p>
+      </p>
       </div>
    <div class="columns is-full-width">
      
